@@ -2,6 +2,7 @@
 
 # This script creates multiple users based on an array of usernames. If the home directories already exist, it will delete everything in the current home directories
 # Creates two directories in each user's home directory called "homework" and "projects"
+# 
 
 usernames=("atanaka" "alee" "rpatel")
 
@@ -14,5 +15,7 @@ do
     sudo mkdir /home/$username/homework
     sudo mkdir /home/$username/projects
 done
+ 
+sudo echo "My Answers" > /home/atanaka/homework/homework1.txt
 
 echo "Successfully created users"
